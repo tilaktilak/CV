@@ -21,12 +21,9 @@
 
 \documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
-%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
-
 \begin{document}
 
 \header{Pierre-Louis}{TILAK}{Embedded System Engineer} % Your name and current job title/field
-%\header{Master Droit }{Juriste d'Entreprise}{Maud BERJAUD-ZARZI}{ID.jpg} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -40,7 +37,6 @@ France
 06 17 83 77 13
 ~
 \href{mailto:pierre.tilak@gmail.com}{pierre.tilak@gmail.com}
-%\href{etud.insa-toulouse.fr/~tilak}{etud.insa-toulouse.fr/~tilak}
 \href{https://www.linkedin.com/pub/pierre-louis-tilak/96/162/a83}{linkedin://pierre-louis-tilak}
 \section{Languages}
 English : Fluent
@@ -56,7 +52,7 @@ HTML,\bigskip\bigskip
 \section{Hardware \& Computer}
 Embedded Linux\bigskip\bigskip
 \section{Software}
-Vim, Git/GitLab, Docker, Latex, MS Office\bigskip\bigskip
+Vim, Git/GitLab, Docker, \href{https://github.com/tilaktilak/CV}{Latex}, MS Office\bigskip\bigskip
 \section{Other}
 Project Management : Agile, Scrum	
 \end{aside}
@@ -100,12 +96,7 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 %{Déodat de Séverac, Toulouse}{Mention Bien}
 %------------------------------------------------
 
-
-
 \end{entrylist}
-
-
-
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -131,25 +122,36 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 %------------------------------------------------
 \entry
 {2014}
-{Stage Ingénieur 3 mois}
 {SCLE SFE - Toulouse}
-{Développement de plan de test JTAG pour Boundary Scan (Logiciel XJTAG):\smallskip
+{3 months Internship}
+{Test plan development : JTAG Boundary Scan (XJTAG Software)
 \begin{itemize}
-\item Codes test pour les SoC (composants Ethernet, SPI, I2C, Watchdog, Série)
-\item Analyse, Conception et Réalisation de cartes interfaces, débogage sur banc de test.
-\end{itemize}}
+\item Test code for SoC (Ethernet, SPI, I2C, Serial, Watchdog ...)
+\item Design and make interface boards for test bench
+\end{itemize}
+}
+%{Développement de plan de test JTAG pour Boundary Scan (Logiciel XJTAG):\smallskip
+%\begin{itemize}
+%\item Codes test pour les SoC (composants Ethernet, SPI, I2C, Watchdog, Série)
+%\item Analyse, Conception et Réalisation de cartes interfaces, débogage sur banc de test.
+%\end{itemize}}
 
 %------------------------------------------------
-
 \entry
 {2012}
-{Rédacteur de modes opératoires}
-{Polymont Sous-traitant Airbus - Toulouse}
-{Mission sur démantèlement de site : Rédaction de modes opératoires sur Iron-bird Airbus A330,A320 et A380.}
+{Polymont Subcontractor of Airbus - Toulouse}
+{Operating Method Writer}
+{ Writing operating method for maintenance on Iron-bird Airbus A330, A320 and A380 }
+%{Mission sur démantèlement de site : Rédaction de modes opératoires sur Iron-bird Airbus A330,A320 et A380.}
+%\entry
+%{2012}
+%{Rédacteur de modes opératoires}
+%{Polymont Sous-traitant Airbus - Toulouse}
+%{Mission sur démantèlement de site : Rédaction de modes opératoires sur Iron-bird Airbus A330,A320 et A380.}
 
 %------------------------------------------------
 
-\entry{2011}{Stage Ouvrier 1 mois}{Airbus - Toulouse}{Equipe Inspection Qualité A380 : Optimisation de la durée des inspections}
+%\entry{2011}{Stage Ouvrier 1 mois}{Airbus - Toulouse}{Equipe Inspection Qualité A380 : Optimisation de la durée des inspections}
 
 
 \end{entrylist}
@@ -159,63 +161,92 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 %	PROJETS
 %----------------------------------------------------------------------------------------
 
-\section{projets tutorés}
+\section{Personal Projects}
 
 \begin{entrylist}
 %------------------------------------------------
 
 \entry
-{6 Mois}
-{AR-Drone et jeu de plateau}
-{Projet 5A - INSA, Toulouse}
-{AR-Drone Parrot, Cortex A8, Linux, OpenCV \smallskip
+{2016}
+{ OpenSource Cocktail Machine }
+{  }
+{ Design and build a cocktail machine (Team of 3 engineers)
 \begin{itemize}
-\item Développement des primitives pour faire évoluer le drone
-\item Détection de l'environnement via traitement de l'image
-\item IHM interactive et contrôle du drone via superviseur
+\item \href{https://cad.onshape.com/documents/fb6038b2912b9dee202ae483/w/fca3360b8bc95b6a2f76da72/e/469430195367acaf31facc33}{CAD Model with Onshape.com}
+\item { Hardware development : Electronic board to interface Raspberry/ESP8266 and stepper motors }
+\item {\href{https://github.com/tilaktilak/Inebriator}{Software development} : \
+Python webserver and lowlevel code for Raspberry, Lua webserver and low level interface for ESP8266}
+\item {HTML, CSS, CherryPy, NodeMCU framework on ESP8266}
+%\item { CHallenges : HTML + CSS webinterface, EMC with high current stepper motors, Memory usage over EPS8266 (lua compilation), Handle multiple request from web interface, .. }
 \end{itemize}
 }
-
-%------------------------------------------------
-
-%------------------------------------------------
 
 \entry
-{6 Mois}
-{Développement d'un OS de Console de Jeu}
-{Projet Tutoré 4A - INSA, Toulouse}
-{Carte de Développement Keil STM32\smallskip
+{2018}
+{ OpenSource Paragliding Variometer GPS and SD logger (IGC) }
+{  }
+{
 \begin{itemize}
-\item Développement des drivers (LCD,FSMC,SDIO,etc), codes d'initialisation du matériel
-\item Notions de contexte applicatif et de processus
-\item Chargement des informations en RAM et exécution d'un jeu depuis l'OS
-\end{itemize}
+\item Version 1 : Autonomous Variometer( \href{https://github.com/tilaktilak/variometre}{Source Code} - \href{https://cad.onshape.com/documents/a2edef2565390c2a63887be6/w/e115fc79a19f6ea7701f931d/e/4bf08f905543160a6d4a78ce}{CAD Model} 
+\item Version 2 : Interface with a Kobo E-reader \href{https://github.com/tilaktilak/xcvario}{Source Code} - \href{https://cad.onshape.com/documents/e35f287762e7eb2639163738/w/944245d017b66dfac14ea554/e/e65c9aaedd3effabe6219e48}{CAD Model}
+%\item Design and build the electronic board (Atmega328p, Ublox Neo6M, BME280, ...)
+%\item Develop code based on Arduino
+\item Challenges : Kalman Filtering, Optimise memory and time execution, CAD modeling, 3D printing
+\end{itemize} 
+
 }
-
-%------------------------------------------------
-
+%\entry
+%{6 Mois}
+%{AR-Drone et jeu de plateau}
+%{Projet 5A - INSA, Toulouse}
+%{AR-Drone Parrot, Cortex A8, Linux, OpenCV \smallskip
+%\begin{itemize}
+%\item Développement des primitives pour faire évoluer le drone
+%\item Détection de l'environnement via traitement de l'image
+%\item IHM interactive et contrôle du drone via superviseur
+%\end{itemize}
+%}
+%
+%%------------------------------------------------
+%
+%%------------------------------------------------
+%
+%\entry
+%{6 Mois}
+%{Développement d'un OS de Console de Jeu}
+%{Projet Tutoré 4A - INSA, Toulouse}
+%{Carte de Développement Keil STM32\smallskip
+%\begin{itemize}
+%\item Développement des drivers (LCD,FSMC,SDIO,etc), codes d'initialisation du matériel
+%\item Notions de contexte applicatif et de processus
+%\item Chargement des informations en RAM et exécution d'un jeu depuis l'OS
+%\end{itemize}
+%}
+%
+%%------------------------------------------------
+%
+%%\entry
+%%{2013}
+%%{Projet Électronique}
+%%{Chulalongkorn, Bangkok}
+%%{1 mois Carte Arduino, Développement d'une boîte à musique,
+%%Codage d'un ensemble de primitives permettant de choisir, lancer et arrêter la lecture d'une piste audio}
+%%\end{entrylist}
+%
+%%------------------------------------------------
+%
+%
+%\entry
+%{2014}
+%{Conception et Développement Temps Réel}
+%{Projet Temps Réel 4A - INSA, Toulouse}
+%{Conception UML, Définition des threads, des primitives de synchronisation, développement sur OS Xenomai afin de faire évoluer un robot filmé dans une arène.}
+%
 %\entry
 %{2013}
-%{Projet Électronique}
-%{Chulalongkorn, Bangkok}
-%{1 mois Carte Arduino, Développement d'une boîte à musique,
-%Codage d'un ensemble de primitives permettant de choisir, lancer et arrêter la lecture d'une piste audio}
-%\end{entrylist}
-
-%------------------------------------------------
-
-
-\entry
-{2014}
-{Conception et Développement Temps Réel}
-{Projet Temps Réel 4A - INSA, Toulouse}
-{Conception UML, Définition des threads, des primitives de synchronisation, développement sur OS Xenomai afin de faire évoluer un robot filmé dans une arène.}
-
-\entry
-{2013}
-{Assembleur ARM Cortex M3}
-{Projet STM32 4A - INSA, Toulouse}
-{Programmation bas niveau, données accéléromètres, afficheur à persistance rétinienne}
+%{Assembleur ARM Cortex M3}
+%{Projet STM32 4A - INSA, Toulouse}
+%{Programmation bas niveau, données accéléromètres, afficheur à persistance rétinienne}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -254,38 +285,15 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Hobbies}
-\textbf{Modélisme} Conception et fabrication d'avions radio-commandés
-\textbf{Électronique et Informatique} Programmation de pic, Électronique, Développement Linux
-\textbf{Musique} Guitariste amateur
-\textbf{Sport} Paragliding, VTT, Basket-ball, Ski
+%\section{Hobbies}
+%\textbf{Modélisme} Conception et fabrication d'avions radio-commandés
+%\textbf{Électronique et Informatique} Programmation de pic, Électronique, Développement Linux
+%\textbf{Musique} Guitariste amateur
+%\textbf{Sport} Paragliding, VTT, Basket-ball, Ski
 
-
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{publications}
-%
-%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
-%
-%\printbibsection{book}{books} % Print all books from the bibliography
-%
-%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
-%\nocite{*}
-%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-%\end{refsection}
-%
-%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
-%\nocite{*}
-%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-%\end{refsection}
-%
-%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
-%
-%\printbibsection{report}{research reports} % Print all research reports from the bibliography
-
-%----------------------------------------------------------------------------------------
+\section{Interests}
+\textbf{RC Models} Design and build RC Gliders and Airplanes \\
+\textbf{Music} Amateur guitarist \\
+\textbf{Sport} Paragliding, Climbing, Ski, MountainBike \\
 
 \end{document}
