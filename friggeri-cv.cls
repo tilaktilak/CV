@@ -75,14 +75,14 @@
 %\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 \RequirePackage{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[Path=./fonts/]{HelveticaNeue}
+\newfontfamily\thinfont[Path=./fonts/]{HelveticaNeue-UltraLight}
+\newfontfamily\headingfont[Path=./fonts/]{HelveticaNeue-CondensedBold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Path=./fonts/, Mapping=tex-text, Color=textcolor]{HelveticaNeue-Light}
 
-\setmathfont{XITS Math}
+\setmathfont[Path=./fonts/]{XITSMath-Regular}
 
 %%%%%%%%%%
 % Header %

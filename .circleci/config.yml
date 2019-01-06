@@ -8,3 +8,6 @@ jobs:
       - run:
           name: Compile CV
           command: xelatex cv_10.tex
+      - store_artifacts:
+          path: cv_10.pdf
+          destination: CV_PierreLouis_TILAK.pdf
