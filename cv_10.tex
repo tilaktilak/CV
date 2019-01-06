@@ -21,6 +21,7 @@
 
 \documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
+
 \begin{document}
 
 \header{Pierre-Louis}{TILAK}{Embedded System Engineer} % Your name and current job title/field
@@ -37,71 +38,47 @@ Appartement 244
 France
 06 17 83 77 13
 ~
-\href{mailto:pierre.tilak@gmail.com}{pierre.tilak@gmail.com}
-\href{https://www.linkedin.com/pub/pierre-louis-tilak/96/162/a83}{linkedin://pierre-louis-tilak}
+\href{mailto:pierre.tilak@gmail.com}{\includegraphics[scale=0.1]{mail} pierre.tilak@gmail.com}
+\href{https://www.linkedin.com/pub/pierre-louis-tilak/96/162/a83}{\includegraphics[scale=0.1]{linkedin}linkedin://pierre-louis-tilak}
+\href{https://github.com/tilaktilak}{\includegraphics[scale=0.1]{github}pierre.tilak}
 \section{Languages}
 French : Mothertongue
 English : Fluent
 TOEIC : 925 pts 
 Spanish : Academic Level\bigskip\bigskip
 \section{Programming Skills}
-%{\color{red} $\varheartsuit$} C/Cpp
-C, CPP
-Python, 
-Docker, YML,
-HTML,\bigskip\bigskip
-\section{Hardware \& Computer}
-Embedded Linux\bigskip\bigskip
-\section{Software}
-Vim, Git/GitLab, Docker, \href{https://github.com/tilaktilak/CV}{Latex}, MS Office\bigskip\bigskip
-\section{Other}
-Project Management : Agile, Scrum	\bigskip\bigskip
+\smartdiagram[bubble diagram]{
+    \textbf{C/C++},
+    \textbf{Python}\\\textbf{/Numpy},
+    \textbf{Other\vspace{3mm}},
+    \textbf{Docker}\\\textbf{YML},
+    \textbf{LUA\vspace{3mm}},
+    \textbf{Bash}
+}\bigskip\bigskip
+\section{Personal Projets}
+\href{https://github.com/tilaktilak/Inebriator}{\textbf{OpenSource Cocktail Machine :}}
+ESP8266/Raspberry Pi\bigskip
+\href{https://github.com/tilaktilak/xcvario}{\textbf{Paragliding Variometer :}}
+Atmega328p/ Kobo E-reader\bigskip\bigskip
 \section{Interest}
 \textbf{RC Models} Design and build RC Gliders and Airplanes
 \textbf{Music} Guitar
 \textbf{Sport} Paragliding, Climbing, Ski, MountainBike
 \end{aside}
-
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
-
-\begin{entrylist}
-
-%------------------------------------------------
-\entry
-{2010--2014}
-{Master of engineering}
-{Institut National des Sciences Appliquées, Toulouse}
-{Automatic Control and Electronics
+\section{Summary}
 \begin{itemize}
-\item Real-time control 
-\item Electronic circuit design
-\item Low Level Programming : Drivers, STM32
-\item Critical Embedded System Programming : SCADE
-\item Real Time OS, JAVA, Android
-\end{itemize}}
+\item Experienced Embedded System Engineer specialized in firmware development.
+\item Ready to manage engineering project
+\item Strong experience in Drone industry, perfect vision of the future of new technologies. 
+\item Ability to design entire firmware project : Requierements, Project Organisation, Programming, Testing and Validation.
+\item Early employee of a fast growing startup : Autonomous, Multitask, multi-skilled, ability to adapt and be commited in any situation.
+\item Can-do attitude and commited to give a broad vision and a result-driven attitude to distribute the best solutions.
+\end{itemize}
 
-%------------------------------------------------
-
-\entry
-{2013}
-{Exchange Semester \textit{Thailand}}
-{Chulanlongkorn University, Bangkok}
-{Information and Communication Engineering : 
-Universal and Technical English skill refining, Embedded System, Arduino Development, Multimedia Engineering}
-
-%------------------------------------------------
-
-%\entry
-%{2010}
-%{Baccalauréat Scientifique Option Sciences de l'Ingénieur}
-%{Déodat de Séverac, Toulouse}{Mention Bien}
-%------------------------------------------------
-
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -113,11 +90,11 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 %------------------------------------------------
 \entry
 {2015-2019}
-{Delair \textit{Developper in Autopilot team}}
+{\href{https://delair.aero}{Delair (Industrial Drone Company)} \textit{Developper in Autopilot team}}
 {Toulouse}
 {Embedded System Engineer
 \begin{itemize}
-\item C Programming on microcontroller : Sensor interface, Drivers, Communication protocols.
+\item C Programming on microcontroller (STM32) : Sensor interface, Drivers, Communication protocols.
 \item Control Laws for Brushelss Gimbal : Kalman filtering, Brushless model control, FOC control
 \item Python engineering tools : GUI for experiment and log analysis ( PyQT, Matplotlib, Dash \& Plotly ), Scripts to communicate (TCP, Serial Port), Web request, Unitary Tests and Continuious integration (Behave)
 \item Implementation of Developpement Environnement : Cross-compilation toolchain (arm-gcc, make), Continious Integration with GitLab Runners : Create docker images (build, complete test environement with simulator) Automatic release package generation and versionning (Gitlab Pipeline, JFrog Artifactory)
@@ -131,16 +108,7 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 {SCLE SFE \textit{3 months internship}}
 {Toulouse}
 {Test plan development : JTAG Boundary Scan (XJTAG Software)
-\begin{itemize}
-\item Test code for SoC (Ethernet, SPI, I2C, Serial, Watchdog ...)
-\item Design and make interface boards for test bench
-\end{itemize}
 }
-%{Développement de plan de test JTAG pour Boundary Scan (Logiciel XJTAG):\smallskip
-%\begin{itemize}
-%\item Codes test pour les SoC (composants Ethernet, SPI, I2C, Watchdog, Série)
-%\item Analyse, Conception et Réalisation de cartes interfaces, débogage sur banc de test.
-%\end{itemize}}
 
 %------------------------------------------------
 \entry
@@ -148,154 +116,101 @@ Universal and Technical English skill refining, Embedded System, Arduino Develop
 {Polymont Subcontractor of Airbus \textit{Operating Method Writer}}
 {Toulouse}
 { Writing operating method for maintenance on Iron-bird Airbus A330, A320 and A380 }
-%{Mission sur démantèlement de site : Rédaction de modes opératoires sur Iron-bird Airbus A330,A320 et A380.}
-%\entry
-%{2012}
-%{Rédacteur de modes opératoires}
-%{Polymont Sous-traitant Airbus - Toulouse}
-%{Mission sur démantèlement de site : Rédaction de modes opératoires sur Iron-bird Airbus A330,A320 et A380.}
-
-%------------------------------------------------
-
-%\entry{2011}{Stage Ouvrier 1 mois}{Airbus - Toulouse}{Equipe Inspection Qualité A380 : Optimisation de la durée des inspections}
 
 
 \end{entrylist}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{entrylist}
+
+%------------------------------------------------
+ \entry
+{2010--2014}
+{Master of engineering}
+{Institut National des Sciences Appliquées, Toulouse}
+{Automatic Control and Electronics}
+
+%------------------------------------------------
+
+\entry
+{2013}
+{Exchange Semester 6 Months\textit{Thailand}}
+{Chulanlongkorn University, Bangkok}
+{}
+
+%------------------------------------------------
+
+%\entry
+%{2010}
+%{Baccalauréat Scientifique Option Sciences de l'Ingénieur}
+%{Déodat de Séverac, Toulouse}{Mention Bien}
+%------------------------------------------------
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS	
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+Tools :
+\begin{itemize}
+\item Gitlab / Jira : Ticketing, Project Managment / Agile 
+\item Docker, Gitlab Pipelines:  Continious Integration
+\item BDD and Unitary Tests : Behave, Gtest
+\item Python : Numpy / PyQt / Plotly / Sockets
+\item Vim, Clang, GCC Toolchain STM32 : Make/Compilation/Debugger
+\end{itemize}
+
+%{Git/GitLab, Docker, \href{https://github.com/tilaktilak/CV}{Latex}, MS Office}
+
+%\entry
+%Project Management : Agile, Scrum	\bigskip\bigskip
+%\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	PROJETS
 %----------------------------------------------------------------------------------------
 
-\section{Personal Projects}
-
-\begin{entrylist}
-%------------------------------------------------
-
-\entry
-{2016}
-{OpenSource Cocktail Machine}
-{  }
-{Design and build a cocktail machine (Team of three engineers)
-\begin{itemize}
-\item \href{https://cad.onshape.com/documents/fb6038b2912b9dee202ae483/w/fca3360b8bc95b6a2f76da72/e/469430195367acaf31facc33}{CAD Model with Onshape.com}
-\item { Hardware development : Electronic board to interface Raspberry/ESP8266 and stepper motors }
-\item {\href{https://github.com/tilaktilak/Inebriator}{Software development} : \
-Python webserver and lowlevel code for Raspberry, Lua webserver and low level interface for ESP8266}
-\item {HTML, CSS, CherryPy, NodeMCU framework on ESP8266}
-%\item { CHallenges : HTML + CSS webinterface, EMC with high current stepper motors, Memory usage over EPS8266 (lua compilation), Handle multiple request from web interface, .. }
-\end{itemize}
-}
-
-\entry
-{2018}
-{OpenSource Paragliding Variometer GPS and SD logger (IGC)}
-{}
-{Design and build a paragliding variometer GPS
-\begin{itemize}
-\item Autonomous Variometer (\href{https://github.com/tilaktilak/variometre}{Source Code} - \href{https://cad.onshape.com/documents/a2edef2565390c2a63887be6/w/e115fc79a19f6ea7701f931d/e/4bf08f905543160a6d4a78ce}{CAD Model} 
-and Interface with a Kobo eReader \href{https://github.com/tilaktilak/xcvario}{Source Code} - \href{https://cad.onshape.com/documents/e35f287762e7eb2639163738/w/944245d017b66dfac14ea554/e/e65c9aaedd3effabe6219e48}{CAD Model})
-%\item Design and build the electronic board (Atmega328p, Ublox Neo6M, BME280, ...)
-%\item Develop code based on Arduino
-\item Kalman Filtering, Optimise memory and time execution, CAD modeling, 3D printing
-\end{itemize}}
-
+%\section{Personal Projects}
+%
+%\begin{entrylist}
+%%------------------------------------------------
+%
 %\entry
-%{6 Mois}
-%{AR-Drone et jeu de plateau}
-%{Projet 5A - INSA, Toulouse}
-%{AR-Drone Parrot, Cortex A8, Linux, OpenCV \smallskip
+%{2016}
+%{OpenSource Cocktail Machine}
+%{  }
+%{Design and build a cocktail machine (Team of three engineers)
 %\begin{itemize}
-%\item Développement des primitives pour faire évoluer le drone
-%\item Détection de l'environnement via traitement de l'image
-%\item IHM interactive et contrôle du drone via superviseur
+%\item \href{https://cad.onshape.com/documents/fb6038b2912b9dee202ae483/w/fca3360b8bc95b6a2f76da72/e/469430195367acaf31facc33}{CAD Model with Onshape.com}
+%\item { Hardware development : Electronic board to interface Raspberry/ESP8266 and stepper motors }
+%\item {\href{https://github.com/tilaktilak/Inebriator}{Software development} : \
+%Python webserver and lowlevel code for Raspberry, Lua webserver and low level interface for ESP8266}
+%\item {HTML, CSS, CherryPy, NodeMCU framework on ESP8266}
+%%\item { CHallenges : HTML + CSS webinterface, EMC with high current stepper motors, Memory usage over EPS8266 (lua compilation), Handle multiple request from web interface, .. }
 %\end{itemize}
 %}
 %
-%%------------------------------------------------
-%
-%%------------------------------------------------
-%
 %\entry
-%{6 Mois}
-%{Développement d'un OS de Console de Jeu}
-%{Projet Tutoré 4A - INSA, Toulouse}
-%{Carte de Développement Keil STM32\smallskip
+%{2018}
+%{OpenSource Paragliding Variometer GPS and SD logger (IGC)}
+%{}
+%{Design and build a paragliding variometer GPS
 %\begin{itemize}
-%\item Développement des drivers (LCD,FSMC,SDIO,etc), codes d'initialisation du matériel
-%\item Notions de contexte applicatif et de processus
-%\item Chargement des informations en RAM et exécution d'un jeu depuis l'OS
-%\end{itemize}
-%}
+%\item Autonomous Variometer (\href{https://github.com/tilaktilak/variometre}{Source Code} - \href{https://cad.onshape.com/documents/a2edef2565390c2a63887be6/w/e115fc79a19f6ea7701f931d/e/4bf08f905543160a6d4a78ce}{CAD Model} 
+%and Interface with a Kobo eReader \href{https://github.com/tilaktilak/xcvario}{Source Code} - \href{https://cad.onshape.com/documents/e35f287762e7eb2639163738/w/944245d017b66dfac14ea554/e/e65c9aaedd3effabe6219e48}{CAD Model})
+%%\item Design and build the electronic board (Atmega328p, Ublox Neo6M, BME280, ...)
+%%\item Develop code based on Arduino
+%\item Kalman Filtering, Optimise memory and time execution, CAD modeling, 3D printing
+%\end{itemize}}
 %
-%%------------------------------------------------
-%
-%%\entry
-%%{2013}
-%%{Projet Électronique}
-%%{Chulalongkorn, Bangkok}
-%%{1 mois Carte Arduino, Développement d'une boîte à musique,
-%%Codage d'un ensemble de primitives permettant de choisir, lancer et arrêter la lecture d'une piste audio}
-%%\end{entrylist}
-%
-%%------------------------------------------------
-%
-%
-%\entry
-%{2014}
-%{Conception et Développement Temps Réel}
-%{Projet Temps Réel 4A - INSA, Toulouse}
-%{Conception UML, Définition des threads, des primitives de synchronisation, développement sur OS Xenomai afin de faire évoluer un robot filmé dans une arène.}
-%
-%\entry
-%{2013}
-%{Assembleur ARM Cortex M3}
-%{Projet STM32 4A - INSA, Toulouse}
-%{Programmation bas niveau, données accéléromètres, afficheur à persistance rétinienne}
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{compétences}
-%
-%%------------------------------------------------
-%
-%\emph{Systèmes Embarqués}
-%
-%\begin{itemize}
-%\item{\textbf{Programmation }}{ Langage C, Java, Assembleur, SQL, ADA, HTML, Xjease}
-%\item{\textbf{Projets }}{STM32 Cortex M3, Pics, Arduino}
-%\item{\textbf{Hardware PC }}{Bonnes notions sur l'architecture, Développement bas niveau (Assembleur, Drivers,etc)}
-%\item{\textbf{OS utilisés }}{Linux, Xenomai (OS Temps Réel), Windows}
-%\item{\textbf{Logiciels Maîtrisés }}{Intelij-Idea, Matlab-Simulink, Keil-uVision, Cadence Orcad, Solidwork} 
-%\item{\textbf{Bureautique }}{SubVersion, Tortoise, SVN, Latex, Pack Office, Gestion de base de données }
-%\end{itemize}
-%
-%%------------------------------------------------
-%
-%\emph{Autres}
-%\begin{itemize}
-%\item{\textbf{Gestion de Projet } Mis en pratique lors de multiples projets INSA ainsi que lors de mes stages}
-%\item{ \textbf{Oral } Attrait pour les présentations orales, le partage des informations}
-%\item{ \textbf{Gestion \& Comptabilité } Notions pratiques acquises lors de cours et de projets de simulation d'entreprise}
-%\end{itemize}
-%
-%%------------------------------------------------
-
-
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{Hobbies}
-%\textbf{Modélisme} Conception et fabrication d'avions radio-commandés
-%\textbf{Électronique et Informatique} Programmation de pic, Électronique, Développement Linux
-%\textbf{Musique} Guitariste amateur
-%\textbf{Sport} Paragliding, VTT, Basket-ball, Ski
-
-%\section{Interests}
+%\end{entrylist}
 
 \end{document}

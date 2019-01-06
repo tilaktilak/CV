@@ -27,6 +27,30 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 
+\definecolor{pblue}{HTML}{0395DE}
+
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{lightgray}{HTML}{999999}
+\definecolor{green}{HTML}{C2E15F}
+\definecolor{orange}{HTML}{FDA333}
+\definecolor{purple}{HTML}{D3A4F9}
+\definecolor{red}{HTML}{FB4485}
+\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{pblue}{HTML}{0395DE}
+\definecolor{materialpurple}{HTML}{9C27B0}
+\definecolor{materialindigo}{HTML}{3F51B5}
+\definecolor{materialblue}{HTML}{2196F3}
+\definecolor{materialcyan}{HTML}{00BCD4}
+\definecolor{materialteal}{HTML}{009688}
+\definecolor{materialgreen}{HTML}{4CAF50}
+\definecolor{materiallime}{HTML}{CDDC39}
+\definecolor{materialamber}{HTML}{FFC107}
+\definecolor{materialbrown}{HTML}{795548}
+\definecolor{materialred}{HTML}{FF4436}
+\definecolor{materialorange}{HTML}{FF5722}
+
+
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
@@ -140,7 +164,7 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{13.8cm}{%
+  #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -152,16 +176,19 @@
 % Side block %
 %%%%%%%%%%%%%%
 
+\usepackage{graphicx}
+\graphicspath{{./icons/}}
+
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1.3cm}
-\setlength{\TPVertModule}{0.7cm} % Distance du texte de droite par rapport au haut de page
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm} % Distance du texte de droite par rapport au haut de page
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
   %\begin{textblock}{3.6}(1.5, 4.33)
-  \begin{textblock}{2.4}(0.5, 4.33) % n1 : , n2 : Décalage à droite du texte droit, n3 : semble inutile
+  \begin{textblock}{4.3}(1, 3.33) % n1 : , n2 : Décalage à droite du texte droit, n3 : semble inutile
   \begin{flushright}
   \obeycr
 }{%
@@ -306,5 +333,27 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=4.6cm,top=2.3cm,right=0.8cm,bottom=0.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2.3cm,right=0.8cm,bottom=0.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+
+\usepackage{smartdiagram}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 1,
+}
