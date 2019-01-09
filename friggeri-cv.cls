@@ -169,7 +169,7 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{1.5\parsep} % Ecart entre les points des listes du texte gauche
+    #4\vspace{0.5\parsep} % Ecart entre les points des listes du texte gauche
   }\\}
 
 
